@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.default.cStandard": "c99",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.compilerPath": "D:\\MinGw\\bin\\gcc.exe",
+    "files.associations": {
+        "cstdint": "cpp"
+    },
+}
