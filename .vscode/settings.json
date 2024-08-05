@@ -4,6 +4,9 @@
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "C_Cpp.default.compilerPath": "D:\\MinGw\\bin\\gcc.exe",
     "files.associations": {
-        "cstdint": "cpp"
+        "cstdint": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "vector": "cpp"
     },
 }

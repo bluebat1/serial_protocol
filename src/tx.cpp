@@ -30,6 +30,10 @@ void TxOverCallback(){
 
 // ---
 static int write(const uint8_t * data, int len) {
+    for (size_t i = 0; i < len; i++)
+    {
+        comQueue.push((char)data[i]);
+    }
     logBlenderData(data, len);
     return len;
 }
@@ -162,7 +166,7 @@ void* TxThread(void * arg){
 
     while(1) {
         TxDoubleBufferPopData();
-        sleep(0.1);
+        sleep(0.01);
     }
     return NULL;
 }

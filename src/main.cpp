@@ -10,9 +10,14 @@
 // 3、事件触发器
 // 4、事件接口
 
+// 协议中所有多字节类型均采用大端字节序模式 0x12345678 -> array[0x12, 0x34, 0x56, 0x78]
+
 #include "util.h"
 #include "tx.h"
 #include "rx.h"
+#include <queue>
+
+std::queue<char> comQueue;
 
 
 int main(int argc, char const *argv[])
@@ -28,11 +33,12 @@ int main(int argc, char const *argv[])
     char buf[123];
     int len = 0;
 
+    // APP 
     while(1) {
         i++;
         len = sprintf(buf, "tx test data %d ", i);
         send(buf, len);
-        sleep(0.7);
+        sleep(0.01);
     }
     return 0;
 }

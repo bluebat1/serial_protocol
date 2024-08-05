@@ -6,7 +6,7 @@
 #include <stdint.h>
 #include <pthread.h>
 
-
+#include <time.h>
 
 // auto include sleep sec
 #if defined(WIN32) || defined(WIN64)
@@ -40,6 +40,8 @@ uint16_t crc16(const uint8_t *data, uint16_t length);
 // 打印混合数据
 void logBlenderData(const uint8_t *data, int len);
 
+// 获取时间戳
+long long get_milliseconds();
 
 
 #endif // util_h
