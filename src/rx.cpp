@@ -4,28 +4,6 @@
 #define protocol_head 0x55
 #define protocal_tail 0xAAccAAcc
 
-// 解析帧
-// 返回处理过的长度
-// static int parse(uint8_t *data, int len){
-//     // find head
-//     int headIndex = -1;
-//     for (size_t i = 0; i < len; i++)
-//     {
-//         if(data[i] == protocol_head){
-//             headIndex = i;
-//             break;
-//         }
-//     }
-//     // not found head
-//     if(headIndex < 0) {
-//         // discard all data
-//         return len;
-//     }
-
-//     // wait recv all data
-//     int contentSize;
-// }
-
 #define timeoutMS 1000
 
 typedef enum
